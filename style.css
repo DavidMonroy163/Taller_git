@@ -1,0 +1,80 @@
+/* Reseteo básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+    background-color: #1a1f2e;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 100px; /* Espacio para el footer */
+}
+
+/* Estilos del Footer */
+footer {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: #151923;
+    border-top: 1px solid #2a3142;
+    padding: 30px 0;
+    z-index: 1000;
+}
+
+.footer-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer-left {
+    color: #a8b3cf;
+    font-size: 14px;
+}
+
+.footer-right {
+    display: flex;
+    gap: 30px;
+}
+
+.footer-right a {
+    color: #a8b3cf;
+    text-decoration: none;
+    font-size: 14px;
+    transition: color 0.3s ease;
+}
+
+.footer-right a:hover {
+    color: #ffffff;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    body {
+        padding-bottom: 150px; /* Más espacio en móviles */
+    }
+
+    .footer-container {
+        flex-direction: column;
+        gap: 20px;
+        text-align: center;
+    }
+
+    .footer-right {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    aside {
+        width: 90%;
+        margin: 20px auto;
+    }
+}
