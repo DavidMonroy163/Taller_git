@@ -1,0 +1,31 @@
+aside {
+  width: 300px;
+  background-color: #1e1e2f;
+  color: #fff;
+  padding: 20px;
+  border-radius: 8px;
+}
+
+aside h2 {
+  border-bottom: 2px solid #ff4757;
+  padding-bottom: 5px;
+  margin-bottom: 10px;
+}
+
+aside ul {
+  list-style: none;
+  padding: 0;
+}
+
+aside li {
+  margin: 5px 0;
+}
+
+aside a {
+  color: #ffa502;
+  text-decoration: none;
+}
+
+aside a:hover {
+  text-decoration: underline;
+}
